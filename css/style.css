@@ -13,7 +13,7 @@ body{
     width: 1236px;
     font-family: 'Gilroy', sans-serif;
     display: flex;
-    flex-wrap: wrap;
+
 }
 .room-title{
     width: 378px;
@@ -125,6 +125,7 @@ body{
 .tricks-container{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .tricks__title{
@@ -193,4 +194,78 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 34px;
+}
+
+@media screen and (max-width: 1024px ) {
+    .flex-container{
+        width: 1000px;
+        justify-content: space-evenly;
+    }
+    .container{
+        width: 1000px;
+    }
+    .tricks-container{
+        justify-content: space-evenly;
+    }
+    .room-slide__therd{
+        display: none;
+    }
+    .room-slide__second{
+        display: none;
+    }
+    .room-slider__arrow{
+        right: 100px;
+    }
+    .room-slide__text{
+        bottom: 88px;
+    }
+    .trikcs-tips_none{
+        display: none;
+    }
+    .trikcs-tips__nav_right{
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 428px ){
+    .flex-container{
+        width: 320px;
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 420px;
+    }
+    .tricks-container{
+        flex-wrap: wrap;
+    }
+    .room-title {
+        margin-top: 25px;
+    }
+    .room-slide{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .room-slide__first{
+        width: 100%;
+    }
+    .room-slider__arrow {
+        right: -34px;
+    }
+    .room-slide__indicator{
+        position: absolute;
+        bottom: -73px;
+        left: 80px;
+    }
+    .trikcs-tips__nav_left{
+        display: none;
+    }
+    .trikcs-tips__nav_right{
+        display: none;
+    }
+    .tricks__img{
+        margin-top: 0px;
+    }
+    .trikcs-tips__img{
+        width: 100%;
+    }
 }
